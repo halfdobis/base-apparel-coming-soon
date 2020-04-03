@@ -1,0 +1,23 @@
+@media only screen and (min-width:1024px){
+    .page_wrap{
+        display: grid;
+        grid-template-columns:1fr 610px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 
+        "logo    img"
+        "content img"
+        "footer  img";
+    }
+    .logo_wrap{
+        grid-area: logo;
+    }
+    .image_container{
+        grid-area: img;
+    }
+    .content{
+        grid-area: content;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}
